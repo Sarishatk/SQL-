@@ -14,4 +14,17 @@ insert into Employee(name,dept, salary, age, email, phone_no, gender)values("sar
                                                                             ("dona", "it", 12000,21, "dona@gmail.com", "6789765423","Female"),
                                                                             ("anagha","intern",18000,21, "anagha@gmail.com","1234567896","Female");
 insert into Employee(name,dept, age, email, phone_no, gender)values("arun", "hr", 21, "arun@gmail.com","8769042356","Male"); 
+insert into Employee(name,dept, age,email,phone_no, gender)values("manu","hr",21,"manu@gmail.com",7865435678,"Male");
+insert into Employee(name,dept, age,email,phone_no, gender)values("anu","hr",21,"anu@gmail.com",7865435678,"Female");
+select * from Employee;
+delete from Employee where id = 3;
+update Employee set salary = 31000 where id = 4 ;
+select name,dept from Employee where age = 21;
+select name,dept from Employee where age>20 and gender = "female";
+select max(salary) from Employee;
+select min(salary) from Employee;
+update Employee set age=24 where id=2;
+select avg(salary) from Employee;
+select avg(age) from Employee;
+select count(*)from Employee;
 
