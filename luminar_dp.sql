@@ -34,6 +34,24 @@ select name from student_details where gender="male";
 
 select name,salary from trainer where experience>1;
 
+select trainer.name , student_details.name from  trainer join student_details on trainer.id = student_details.trainer_id;
+
+-- display the trainer name ,trainer course and student name--
+
+select trainer.name, trainer.course, student_details.name from trainer join student_details on trainer.id = student_details.trainer_id;
+
+-- name of trainers and students who having course DS-- 
+
+select trainer.name , student_details.name from trainer join student_details on trainer.id = student_details.trainer_id where trainer.course = "DS";
+
+select student_details.name, trainer.course,trainer.qualification from  student_details join trainer on trainer.id = student_details.trainer_id;
+
+select trainer.name,(count(student_details.id)) as total_students from student_details join trainer on trainer.id = student_details.trainer_id group by trainer.name;
+
+
+
+
+
 
 
 
