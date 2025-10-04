@@ -16,7 +16,7 @@ create table users(id int auto_increment primary key,
 -- insert 2 records in to the table--
 insert into  bookss(title,author,price, published_date , stock,bookss_id)values('ramayanam','moulavi',180,'2025-10-04',4),
 																	("adu_jeevitham","ramayyar",140,"2025-11-04",6);
-select * from bookss;
+
 
 insert into users(username,place,bookss_id)values("arun","otp",1),
                                                ("varun","pkd",2);
@@ -24,6 +24,7 @@ insert into users(username,place,bookss_id)values("arun","otp",1),
 
                                                                     
 -- display all note books--
+select * from bookss;
 
 
 
