@@ -26,6 +26,10 @@ insert into users(username,place,bookss_id)values("arun","otp",1),
 -- display all note books--
 select * from bookss;
 
+-- show only title and price  of all books--
+
+select title,price from bookss; 
+
 
 
  
